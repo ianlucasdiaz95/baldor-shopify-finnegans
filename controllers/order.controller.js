@@ -1,10 +1,14 @@
 const { response, request } = require('express');
-const { finneg } = require('../services/finneg.service');
+const finnegService = require('../services/finneg.service');
 
 
 const orderNew = (req = request, res = response) => {
 
     console.log(req.body);
+
+    const reponse = finnegService.auth();
+
+    console.log(response);
 
 
 
