@@ -1,2 +1,2 @@
-# Vulcano Customized Bot
-Telegram Bot running on node.js
+# Baldor Shopify <> Finnegans Middleware
+Middleware service running on node.js
