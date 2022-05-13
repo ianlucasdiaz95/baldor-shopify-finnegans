@@ -1,9 +1,12 @@
 const { response, request } = require('express');
+const { finneg } = require('../services/finneg.service');
 
 
 const orderNew = (req = request, res = response) => {
 
-    console.log(res.body);
+    console.log(req.body);
+
+
 
      res.json({
         msg: 'Endpoint Deshabilitado',
@@ -12,7 +15,7 @@ const orderNew = (req = request, res = response) => {
 
 const orderUpdate = (req, res = response) => {
 
-    console.log(res.body);
+    console.log(req.body);
 
      res.json({
         msg: 'Endpoint Deshabilitado',
