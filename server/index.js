@@ -46,7 +46,7 @@ class Server {
     }
 
     routes() {
-        this.app.use( this.basePath, require('../routes/base.route'));
+        this.app.use( this.orderPath, require('../routes/order.route'));
     }
 
     crons() {
