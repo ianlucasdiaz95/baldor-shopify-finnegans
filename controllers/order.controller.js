@@ -41,7 +41,7 @@ const orderNew = async (req = request, res = response) => {
     });
 }
 
-const orderUpdate = (req, res = response) => {
+const orderUpdate = async (req, res = response) => {
 
     const { data: token } = await finnegService.auth();
 
