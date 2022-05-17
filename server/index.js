@@ -18,7 +18,7 @@ class Server {
         //this.dbConnection();
         
         //Inicialización de cron
-        this.crons();
+        //this.crons();
 
         // Middlewares
         this.middlewares();
