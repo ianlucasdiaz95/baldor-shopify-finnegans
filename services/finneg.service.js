@@ -7,11 +7,11 @@ const finnegService = {
     },
 
     orderNew(order, token) {
-        return axios.post(`${process.env.FINNEG_API_URL} /pedidoVenta?ACCESS_TOKEN=${token}`, order );
+        return axios.post(`${process.env.FINNEG_API_URL}/pedidoVenta?ACCESS_TOKEN=${token}`, order );
     },
 
     orderUpdate(order, token) {
-        return axios.put(`${process.env.FINNEG_API_URL} /pedidoVenta?ACCESS_TOKEN=${token}`, order );
+        return axios.put(`${process.env.FINNEG_API_URL}/pedidoVenta?ACCESS_TOKEN=${token}`, order );
     }
 }
 
