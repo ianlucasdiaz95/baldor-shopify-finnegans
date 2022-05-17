@@ -34,9 +34,11 @@ const orderNew = async (req = request, res = response) => {
             MonedaCodigo: "PES",
         }
 
+        console.log(order);
+
         const { data } = await finnegService.orderNew(order, token);
 
-        console.log(order, data.data);
+        //console.log(order, data.data);
 
         res.json({
             msg: 'OK',
@@ -44,7 +46,7 @@ const orderNew = async (req = request, res = response) => {
 
     } catch (error) {
 
-        console.log(error);
+        //console.log(error);
 
         res.status(500).json({
             msg: 'Error',
