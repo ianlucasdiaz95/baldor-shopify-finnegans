@@ -46,7 +46,7 @@ const orderNew = async (req = request, res = response) => {
 
         console.log(error);
 
-        res.json({
+        res.status(500).json({
             msg: 'Error',
         });
 
@@ -99,7 +99,7 @@ const orderUpdate = async (req, res = response) => {
 
         console.log(error);
 
-        res.json({
+        res.status(500).json({
             msg: 'Error',
         });
 
