@@ -11,7 +11,7 @@ const finnegService = {
     },
 
     orderUpdate(order, token) {
-        return axios.put(`${process.env.FINNEG_API_URL}/pedidoVenta?ACCESS_TOKEN=${token}`, order );
+        return axios.put(`${process.env.FINNEG_API_URL}/pedidoVenta/${order.IdentificacionExterna}?ACCESS_TOKEN=${token}`, order );
     }
 }
 
