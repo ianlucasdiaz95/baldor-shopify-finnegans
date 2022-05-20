@@ -80,7 +80,7 @@ const orderUpdate = async (req, res = response) => {
 
         const { data: token } = await finnegService.auth();
 
-        let items = [];
+        /*let items = [];
 
         for (let i = 0; i < req.body.line_items.length; i++) {
             items.push({
@@ -90,7 +90,24 @@ const orderUpdate = async (req, res = response) => {
                 Descripcion: req.body.line_items[i].title,
                 Cantidad: req.body.line_items[i].quantity
             });
-        }
+        }*/
+
+        let items = [
+            {
+                vinculacionOrigen: 5580102566043,
+                Precio: '69999.00',
+                ProductoCodigo: 'SS5-X25',
+                Descripcion: 'Reactivos para Drogas en Saliva Marca Craigh Medical  Confirm 5 (caja por 25 unidades)',
+                Cantidad: 1
+            },
+            {
+                vinculacionOrigen: 5580102566043,
+                Precio: '69999.00',
+                ProductoCodigo: '10178557',
+                Descripcion: 'Reactivos para Drogas en Saliva Marca Craigh Medical  Confirm 5 (caja por 25 unidades)',
+                Cantidad: 1
+            },
+        ]
 
         const order = {
             Cliente: "Prueba",
